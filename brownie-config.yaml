@@ -1,0 +1,38 @@
+dependencies:
+  - smartcontractkit/chainlink-brownie-contracts@0.4.0
+  - OpenZeppelin/openzeppelin-contracts@4.5.0
+  - Uniswap/v3-periphery@1.3.0
+  - henryf10h/lz-solidity-examples@0.0.1
+
+
+
+compiler:
+  solc:
+    remappings:
+      - "@chainlink=smartcontractkit/chainlink-brownie-contracts@0.4.0"
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.5.0"
+      - "@uniswap=Uniswap/v3-periphery@1.3.0"
+      - "@layerzero=henryf10h/lz-solidity-examples@0.0.1"
+
+dotenv: .env
+
+networks:
+
+  rinkeby: 
+    chainId: 10001
+    endpoint: '0x79a63d6d8BBD5c6dfc774dA79bCcD948EAcb53FA'
+    srcAddress: '0xaf41F02Be18Ef3cC04f979e9AB0A97d2B9789e78'
+
+  polygon-test:
+    chainId: 10009
+    endpoint: '0xf69186dfBa60DdB133E91E9A4B5673624293d8F8'
+    srcAddress: '0xA35F37582242B2416871281357b77c5F1E423a5D'
+
+wallets:
+
+  from_key: ${PRIVATE_KEY}
+  from_key2: ${PRIVATE_KEY2}
+
+
+
+   

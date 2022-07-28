@@ -1,0 +1,7 @@
+brownie pm install henryf10h/lz-solidity-examples@0.0.1  to add the package
+copy brownie-config.yaml 
+brownie compile 
+deploy in mumbai and rinkeby
+set trusted remote in both chains
+increase counter
+then we want to increase counter in both
